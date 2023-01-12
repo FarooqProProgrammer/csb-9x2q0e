@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%; /* for large devices, 3 cards per row */
+  margin: 1%;
+  box-shadow: 2px 2px 5px #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 45%; /* for medium devices, 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95%; /* for small devices, 1 card per row */
+  }
+}
+
+.card:hover {
+  box-shadow: 4px 4px 10px #ccc;
+  transform: scale(1.05);
+}
